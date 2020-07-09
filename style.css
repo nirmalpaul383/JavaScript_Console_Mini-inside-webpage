@@ -1,0 +1,51 @@
+* {
+  padding: 0px;
+  margin: 0px;
+
+}
+
+#dis {
+  width: 98vw;
+  display: inline-block;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  background: rgb(0, 0, 0);
+  height: 83vh;
+  color: rgb(51, 204, 51);
+}
+
+#code {
+  display: inline-block;
+  width: 98vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  height: 10vh;
+  
+}
+
+#ok {
+  display: inline-block;
+  width: 23vw;
+  margin-left: 38.5vw;
+  margin-right: 38.5vw;
+  height: 5vh;
+  background: rgb(51, 204, 204);
+}
+
+#ok:hover {
+  display: inline-block;
+  width: 23vw;
+  margin-left: 38.5vw;
+  margin-right: 38.5vw;
+  height: 5vh;
+  background: rgb(51, 204, 89);
+}
+
+#ok:active {
+  display: inline-block;
+  width: 23vw;
+  margin-left: 38.5vw;
+  margin-right: 38.5vw;
+  height: 5vh;
+  background: rgb(204, 51, 51);
+}
