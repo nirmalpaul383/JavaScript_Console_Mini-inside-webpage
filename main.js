@@ -19,18 +19,25 @@ function ok() {
 `;
   
   
-  var i = 0;
-  obj.push(code.value);
-  console.log(obj.lenght);
-
-  while (i < obj.length ) {
+  while (i < obj.length) {
     if (i != (obj.length - 1))
     {
-      eval(obj[i]);
-    }
+      try {
+        eval(obj[i]);
+        throw "Error";
+      }
+      catch(err) {
+        
+      }
+   }
     else
     {
-      process = eval(obj[i]);
+      try {
+        process = eval(obj[i]);
+      }
+      catch (err) {
+        process = err.message;
+      }
     };
     i++;
   };
