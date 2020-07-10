@@ -1,6 +1,7 @@
 # JavaScript_Console_Mini-inside-webpage
 A small project to run javascript code directly into the webpage... It is just like the https://www.jsconsole.com but a very basic one...
 To run it Download this and extract it (if zipped). Just Run "index.html"
+Live Preview: https://nirmalpaul383.github.io/JavaScript_Console_Mini-inside-webpage/
 .........................................................
 This project is originally made by me(N Paul).
  My github profile https://github.com/nirmalpaul383/
