@@ -1,0 +1,146 @@
+/** 
+About House Calc (Web Ported): House Calc (Web Ported) is the web ported of House Calc(android application made by N Paul (https://github.com/nirmalpaul383)). Original House Calc sources files can be found on https://github.com/nirmalpaul383/Project-House-Calc . House Calc is an open source "income from house property calculator" based on the Indian income tax law. Note: This calculator is made just only for publicly and quickly calculate the 'basic' taxation under 'income from house property head' in India. This is not the professional nor official tax consultant application. Users are requested to verify the result before using them on any official statement(s).
+  This project is originally made by me(N Paul).My github profile https: //github.com/nirmalpaul383/ My youtube page https://www.youtube.com/channel/UCY6JY8bTlR7hZEvhy6Pldxg/
+    This is an open source program.You are welcomed to modify it...If you want to support me please give a like to our facebook page https: //facebook.com/a.new.way.Technical/
+**/
+
+body {
+  font-size: 15pt;
+}
+
+#inputPage {
+  border: 1px double black;
+  padding: 2px;
+}
+
+input {
+  display: block;
+  margin: auto;
+}
+
+input[type="number"] {
+  width: 75vw;
+  height: 2vh;
+  background: rgb(204, 255, 255);
+  border: 1px dashed rgb(0, 26, 0);
+  border-radius: 15px;
+}
+
+input[type="text"] {
+  width: 80vw;
+  height: 2vh;
+  background: rgb(204, 255, 204);
+  border: 1px dashed rgb(0, 26, 0);
+  border-radius: 10px;
+}
+
+#first {
+  border: 1px solid red;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  text-align: center;
+}
+
+#second {
+  border: 1px dotted blue;
+  margin-top: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  text-align: center;
+}
+
+#third {
+  border: 1px dotted green;
+  margin-top: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  text-align: center;
+}
+
+#fourth {
+  border: 1px dotted aqua;
+  margin-top: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  text-align: center;
+}
+
+#calculate {
+  margin-top: 2vh;
+  width: 45vw;
+  height: 3vh;
+  background: rgb(51, 204, 51);
+  border-radius: 12px;
+}
+
+#calculate:hover {
+  background: rgb(102, 255, 255);
+}
+
+#calculate:active {
+  background: rgb(0, 102, 255);
+}
+
+
+
+#resultPage {
+  border: 1px dotted rgb(0, 255, 255);
+  margin: auto;
+  padding: 2vw;
+  width: 90vw;
+  display: none;
+}
+
+table {
+  border: 1px solid blue;
+  width: 90vw;
+}
+
+td {
+  border: 1px solid red;
+  background: rgb(204, 255, 204);
+}
+
+#gav {
+  background: rgb(102, 255, 255);
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#nav {
+  background: rgb(0, 204, 255);
+  font-weight: bold;
+}
+
+#gavLess {
+  background: rgb(0, 255, 153);
+  margin-top: 5px;
+}
+
+#deduction {
+  margin-top: 10px;
+}
+
+#income {
+  margin-top: 10px;
+  background: rgb(153, 255, 153);
+  color: red;
+  font-weight: bold;
+}
+
+#reset {
+  margin-top: 2vh;
+  width: 45vw;
+  height: 3vh;
+  background: rgb(51, 204, 51);
+  border-radius: 12px;
+}
+
+#reset:hover {
+  background: rgb(255, 102, 204);
+}
+
+#reset:active {
+  background: rgb(204, 0, 0);
+
+}

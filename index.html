@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  
+  <!-- About House Calc (Web Ported): House Calc (Web Ported) is the web ported of House Calc(android application made by N Paul (https://github.com/nirmalpaul383)). Original House Calc sources files can be found on https://github.com/nirmalpaul383/Project-House-Calc . House Calc is an open source "income from house property calculator" based on the Indian income tax law. Note: This calculator is made just only for publicly and quickly calculate the 'basic' taxation under 'income from house property head' in India. This is not the professional nor official tax consultant application. Users are requested to verify the result before using them on any official statement(s).
+  This project is originally made by me(N Paul). My github profile https://github.com/nirmalpaul383/ My youtube page https://www.youtube.com/channel/UCY6JY8bTlR7hZEvhy6Pldxg/
+  This is an open source program . You are welcomed to modify it... If you want to support me please give a like to our facebook page https://facebook.com/a.new.way.Technical/
+  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="inputPage">
+    <div id="first">
+      <label>Person Name</label>
+      <input type="text" id="personName" value="MR X" placeholder="Enter the person's name">
+      <div id="type of calculation">
+        <label for="cars">House types:</label>
+        <select name="calculation types" id="calculation types">
+          <option value="Let Out">Let Out</option>
+          <option value="Self Occupied">Self Occupied</option>
+        </select>
+      </div>
+      <label>Assessment year</label>
+      <input type="number" id="ay" min="2000" max="2100" value="2018" placeholder="A.Y">
+      <label>Previous year</label>
+      <input type="number" id="py" min="2000" max="2100" value="2019" placeholder="P.Y">
+    </div>
+    <div id="second">
+      <label>Municipal Value</label>
+      <input type="number" id="municipal value" placeholder="Municipal Value">
+      <label>Standard Rent</label>
+      <input type="number" id="standard Rent" placeholder="Standard Rent">
+      <label>Fair Rent</label>
+      <input type="number" id="fair Rent" placeholder="Fair Rent">
+    </div>
+    <div id="third">
+      <label>Annual rent recived or receivable</label>
+      <input type="number" id="annual rent" placeholder="Annual Rent">
+      <label>Unrealized rent during current P.Y</label>
+      <input type="number" id="unrealized rent" placeholder="Unrealized Rent">
+    </div>
+    <div id="fourth">
+      <label>Loss Due to vacancy during current P.Y</label>
+      <input type="number" id="loss" placeholder="Loss Amount">
+      <label>Municipal Tax paid by owner</label>
+      <input type="number" id="tax" placeholder="Tax Amount">
+      <label>Interest on Loan(Loan used for house Property purpose)</label>
+      <input type="number" id="interest" placeholder="Interest Amount">
+    </div>
+    <input type="button" value="Calculate" id="calculate" onclick="Calculate()">
+  </div>
+  <div id="resultPage">
+    <table>
+      <th id="inTheBooksOf"></th>
+    </table>
+    <div id="values">
+      <table>
+        <tr>
+          <th>Step No.</th>
+          <th>Particulars</th>
+          <th>Amount</th>
+        </tr>
+        <tr>
+          <td>Step1,</td>
+          <td>Higher of Municipal value or Fair rent but subject to maximum of Standard rent</td>
+          <td id="step1"></td>
+        </tr>
+        <tr>
+          <td>Step2,</td>
+          <td>Annual rent received or receivable - Unrelized rent during current P.Y</td>
+          <td id="step2"></td>
+        </tr>
+        <tr>
+          <td>Step3,</td>
+          <td>Higher of Step1 or Step2</td>
+          <td id="step3"></td>
+        </tr>
+        <tr>
+          <td>Step4,</td>
+          <td>Step3 - Loss due to vacancy</td>
+          <td id="step4"></td>
+        </tr>
+      </table>
+      <div id="gav">
+        Gross Annual Value -->
+      </div>
+      <div id="gavLess">
+        Less: Municipal Tax 'Paid by the owner--> 
+      </div>
+      <div id="nav">
+        Net Annual Value --> <td id="navVal"></td>
+      </div>
+    </div>
+    <div id="deduction">
+      <table>
+        <tr>
+          <th>
+            Less:
+          </th>
+          <th>
+            Deduction Under Section 24
+          </th>
+          <th>
+            (Amount)
+          </th>
+          <th>
+            Total
+          </th>
+        </tr>
+        <tr>
+          <td>U/S 24(a)</td>
+          <td>Standard Deduction [30% of Net Annual Value]</td>
+          <td id="us24a"></td>
+        </tr>
+        <tr>
+          <td>U/S 24(b)</td>
+          <td>Interest On Loan(loan used for house property purpose)</td>
+          <td id="us24b"></td>
+          <td id="totalDeduction"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="taxable">
+      <div id="income">
+        Income from House Property -->
+      </div>
+    </div>
+    <input type="button" id="reset" value="Reset" onClick="location.reload()">
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
