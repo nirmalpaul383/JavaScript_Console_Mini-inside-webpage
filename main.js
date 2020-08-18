@@ -10,7 +10,6 @@
 let outputDisplay = document.getElementById('outputDisplay'); //Display
 let inputCode = document.getElementById('inputCode'); //Input
 
-let processTemp = '' //Process Temp
 
 
 //Set opening/welcome value to the display
@@ -21,6 +20,8 @@ outputDisplay.value = `Welcome to JavaScript Console Mini by N Paul... Current V
 //Declaration of main function
 function acceptThisCode() {
 
+  let processTemp = '' //Process Temp
+ 
   outputDisplay.value = `${outputDisplay.value} user: ${inputCode.value}
 `; /* User input code will be displayed on the display log */
 
