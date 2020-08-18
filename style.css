@@ -4,7 +4,7 @@
 
 }
 
-#dis {
+#outputDisplay {
   width: 98vw;
   display: inline-block;
   margin-left: 1vw;
@@ -14,7 +14,7 @@
   color: rgb(51, 204, 51);
 }
 
-#code {
+#inputCode {
   display: inline-block;
   width: 98vw;
   margin-left: 1vw;
@@ -23,7 +23,7 @@
   
 }
 
-#ok {
+#acceptButton {
   display: inline-block;
   width: 23vw;
   margin-left: 38.5vw;
@@ -32,7 +32,7 @@
   background: rgb(51, 204, 204);
 }
 
-#ok:hover {
+#acceptButton:hover {
   display: inline-block;
   width: 23vw;
   margin-left: 38.5vw;
@@ -41,7 +41,7 @@
   background: rgb(51, 204, 89);
 }
 
-#ok:active {
+#acceptButton:active {
   display: inline-block;
   width: 23vw;
   margin-left: 38.5vw;
