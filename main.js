@@ -5,48 +5,39 @@
  If you want to support me please give a like to our facebook page 
  https://facebook.com/a.new.way.Technical/  **/
 
-var code = document.getElementById('code');
-var dis = document.getElementById('dis');
-var obj = [];
-var process;
-dis.value = `Welcome to JavaScript Console Mini by N Paul... Current Version 1.0.0
+
+//Declaration of all essential global variables
+let outputDisplay = document.getElementById('outputDisplay'); //Display
+let inputCode = document.getElementById('inputCode'); //Input
+
+let processTemp = '' //Process Temp
+
+
+//Set opening/welcome value to the display
+outputDisplay.value = `Welcome to JavaScript Console Mini by N Paul... Current Version 1.1.0
 
 `;
 
+//Declaration of main function
+function acceptThisCode() {
 
-function ok() {
-  dis.value = `${dis.value} User: ${code.value}
-`;
+  outputDisplay.value = `${outputDisplay.value} user: ${inputCode.value}
+`; /* User input code will be displayed on the display log */
 
-
-  var i = 0;
-  obj.push(code.value);
-  console.log(obj.lenght);
-
-  while (i < obj.length) {
-    if (i != (obj.length - 1))
-    {
-      try {
-        eval(obj[i]);
-        throw "Error";
-      }
-      catch(err) {
-        
-      }
-   }
-    else
-    {
-      try {
-        process = eval(obj[i]);
-      }
-      catch (err) {
-        process = err.message;
-      }
-    };
-    i++;
+  {
+    try {
+      processTemp = window.eval(inputCode.value); /* Try to evaluate user's input and record its output. 'window.eval()' is used 
+      because 'eval()' has local scope but 'window.eval()' has global scope*/
+    }
+    catch (errorMsg) {
+      processTemp = errorMsg; /* If an error occurred while evaluating. It will record the error message */
+    }
   };
-  dis.value = `${dis.value} JavaScript Engine: ${process}
 
-`;
-  code.value = "";
-}
+  inputCode.value = ''; /* It will clear user input panel */
+
+  outputDisplay.value = `${outputDisplay.value} JavaScript Engine: ${processTemp}
+
+`; /* It will show the final output to the display(by Creating a log) */
+
+};
